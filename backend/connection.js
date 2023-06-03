@@ -3,7 +3,7 @@ const mongoose = require('mongoose');          //write req and press enter
 
 const dbName = 'CompanyProfile_Pro';       //no space between name
 
-const url = `mongodb+srv://ashutoshshubham:ashutosh@cluster0.cqjsjz0.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+const url = `mongodb+srv://guptadeepanshu340:1234@cluster0.8iybpqw.mongodb.net/Manifesto?retryWrites=true&w=majority`;
 
 mongoose.connect(url)
 //write thenc and press enter

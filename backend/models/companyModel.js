@@ -8,6 +8,9 @@ const mySchema = new Schema({
     address: String,
     contact: Number,
     email: String,
+    cover: String,
+    backlink: String,
+    theme: String,
     user : {type : Types.ObjectId, ref: 'users'}
 
 })
