@@ -62,6 +62,16 @@ router.get('/getbyid/:compId', (req, res) => {
         });
 })
 
+router.get('/getbyuser/:id', (req, res) => {
+    Model.find({user : req.params.id})
+        .then((result) => {
+            res.json(result);
+        }).catch((err) => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+})
+
 router.put('/update_pro/:compId', (req, res) => {
 
     Model.findByIdAndUpdate(req.params.compId, req.body)

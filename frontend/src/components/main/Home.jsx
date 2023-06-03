@@ -12,7 +12,7 @@ const Home = () => {
       <p className='mt-3 text-center fs-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut magni pariatur eum laborum unde vel repellat aspernatur repudiandae magnam illum nesciunt neque tempore eius, consequuntur temporibus voluptate, nisi in vitae, quisquam voluptates explicabo nemo dolor! Dolores aspernatur veniam cupiditate explicabo velit minima, incidunt ipsum ratione. Veniam voluptatum dolorum minus voluptates, impedit molestias tempore autem quis officia nulla quae sed ea! Doloremque atque nesciunt a beatae iure, temporibus quisquam ducimus repellendus possimus quod tempora. Ullam repellat assumenda totam? Dolorem, eligendi dicta.</p>
 
       <div className="text-center">
-        <Link to='/signup'><button className="btn btn-primary rounded-pill mt-2">Get Started</button></Link>
+        <Link to='/main/signup'><button className="btn btn-primary rounded-pill mt-2">Get Started</button></Link>
       </div>
 
       <div className="row mt-3">

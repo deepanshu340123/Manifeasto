@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -136,6 +136,8 @@ const Pro_list = () => {
                   </p>
                 </div>
 
+
+                <NavLink className='btn btn-primary' to={"/main/companydetails/"+profiles._id} >View More Details</NavLink>
 
                 {/* <button type="button" className="btn btn-danger" onClick={() => (deleteProfile(profiles._id))}>
               Delete Profile

@@ -13,8 +13,10 @@ const All_Details = () => {
     const [profile, setProfile] = useState([])
     const [feed, setFeed] = useState([])
 
+    const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
+
     const fetchProfiles = async () => {
-        const res = await fetch('http://localhost:5000/company/getall');
+        const res = await fetch('http://localhost:5000/company/getbyuser/'+currentUser._id);
         console.log(res.status)
 
         const data = await res.json();

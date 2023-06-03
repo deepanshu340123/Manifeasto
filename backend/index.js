@@ -4,6 +4,7 @@ const express = require('express');          //method to import any package, her
 const userRouter = require('./routers/userRouter');
 const companyRouter = require('./routers/companyRouter');
 const feedbackRouter = require('./routers/feedbackRouter');
+const utilRouter = require('./routers/util');
 
 // const feedbackRouter = require('./routers/feedbackRouter');
 
@@ -40,11 +41,10 @@ app.use(express.json());                 //convert data from json to js
 app.use('/user', userRouter);            //sending request to userRouter
 app.use('/company', companyRouter);
 app.use('/feedback', feedbackRouter);
+app.use('/util', utilRouter);
 
 // app.use('/feedback', feedbackRouter)
-
-
-
+app.use(express.static('./static/uploads'));       //to make public folder as static folder
 
 
 //to start express server
