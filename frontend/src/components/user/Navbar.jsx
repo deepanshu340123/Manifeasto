@@ -63,7 +63,7 @@ const Navbar = () => {
                     <div className="container">
                         {/* Navbar brand */}
                         <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-File.png" alt="" height={45}/>
-                        <Link class="navbar-brand text-white" to="homepage"><b>COMPANY PROFILE</b></Link>
+                        <Link class="navbar-brand text-white" to="/main/homepage"><b>COMPANY PROFILE</b></Link>
 
                         {/* Toggle button */}
                         <button
@@ -102,7 +102,7 @@ const Navbar = () => {
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link text-white" to="/user/all_details">
+                                    <NavLink className="nav-link text-white" to="/user/managecompanies">
                                         All Details
                                     </NavLink>
                                 </li>

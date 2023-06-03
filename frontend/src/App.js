@@ -17,6 +17,7 @@ import UserAuth from './auth/UserAuth'
 import AdminProvider from './context/AdminProvider'
 import Main from './components/main';
 import User from './components/user';
+import CompanyDetails from './components/main/CompanyDetails';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
@@ -34,11 +35,12 @@ function App() {
             <Route element={<SignUp />} path='signup' />
             <Route element={<ForgetPswd />} path='forgetpswd' />
             <Route element={<Pro_list />} path='pro_list' />
+            <Route element={<CompanyDetails />} path='companydetails/:id' />
           </Route>
 
           <Route element={<UserAuth><User /></UserAuth>} path='user'>
+            <Route element={<All_Details />} path='managecompanies' />
             <Route element={<Feedback />} path='feedback' />
-            <Route element={<All_Details />} path='all_details' />
             <Route element={<Pro_entry />} path='pro_entry' />
             <Route element={<Update_Pro />} path='update_pro/:id' />
           </Route>

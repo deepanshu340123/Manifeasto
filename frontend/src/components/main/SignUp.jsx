@@ -13,32 +13,6 @@ const Signup = () => {
 
 
 
-  // const addOrg = async () => {
-  //   // console.log(formdata)
-  //   // resetForm()
-
-  //   const res = await fetch('http://localhost:5000/organisation/add', {
-  //     method: 'POST',
-  //     body: JSON.stringify({}),
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     }
-  //   })
-
-  //   console.log(res.status);
-
-  //   if (res.status === 200) {
-  //     Swal.fire({
-  //       icon: 'success',
-  //       title: 'Success',
-  //       text: 'Signed Successfully'
-  //     })
-  //     const data = await res.json();
-  //     return data._id;
-  //     // navigate('/user');
-  //   }
-
-  // }
 
 
   const userSubmit = async (formdata, {resetForm}) => {
@@ -66,7 +40,7 @@ const Signup = () => {
         title: 'Success',
         text: 'Signed Successfully'
       })
-      // navigate('/organisationPro');
+      navigate('/main/login');
     }
 
   }
