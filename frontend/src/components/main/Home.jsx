@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className='container'>
 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/M%C3%BCnster%2C_LVM%2C_B%C3%BCrogeb%C3%A4ude_--_2013_--_5149-51.jpg" alt="" className='w-100' />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/M%C3%BCnster%2C_LVM%2C_B%C3%BCrogeb%C3%A4ude_--_2013_--_5149-51.jpg" alt="" className='w-100' width='100px' height='500px'/>
 
       <h1 className='text-center my-5'>WELCOME TO OUR WEBSITE</h1>
 
