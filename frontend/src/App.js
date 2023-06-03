@@ -24,7 +24,6 @@ function App() {
   const [currentAdmin, setCurrentAdmin] = useState(JSON.parse(sessionStorage.getItem('admin')));
   return (
     <BrowserRouter>
-      {/* <AdminProvider> */}
       <UserProvider currentUser={currentUser}>
         <Routes>
           
