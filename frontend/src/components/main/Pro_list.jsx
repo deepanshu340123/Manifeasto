@@ -15,6 +15,8 @@ const Pro_list = () => {
 
   // const [imageData, setImageData] = useState([])
 
+  const [masterList, setMasterList] = useState([]);
+
 
   const fetchProfiles = async () => {
     const res = await fetch('http://localhost:5000/company/getall');
@@ -23,6 +25,7 @@ const Pro_list = () => {
     const data = await res.json();
     console.log(data);
     setProfile(data)
+    setMasterList(data);
   }
 
   const filterCompanies = async (category, value) => {
@@ -35,7 +38,6 @@ const Pro_list = () => {
     let filtered = data.filter(data => (data[category].toLowerCase().includes(value.toLowerCase())))
     console.log(filtered);
     setProfile(filtered)
-
   }
 
   //   const fetchImages = async () => {
@@ -71,9 +73,21 @@ const Pro_list = () => {
   //   }
   // }
 
+  const filterByCompanyName = async (category, value) => {
+      console.log(value);
+      let filtered = masterList.filter(data => (data[category].toLowerCase().includes(value.toLowerCase())))
+      console.log(filtered);
+      setProfile(filtered);
+  }
+
 
   return (
     <div className='container'>
+
+      <header className='list-header'>
+        <h1 className='text-center mt-3 display-4 text-center fw-bold'>Browse Company Profiles</h1>
+        <input className='form-control' onChange={e => filterByCompanyName('name', e.target.value)} />
+      </header>
 
       <button className='btn btn-secondary mx-2 mt-3' onClick={() => { filterCompanies('type', 'sales') }}>
         Sales
