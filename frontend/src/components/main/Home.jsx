@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <div className='container'>
 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/M%C3%BCnster%2C_LVM%2C_B%C3%BCrogeb%C3%A4ude_--_2013_--_5149-51.jpg" alt="" className='w-100' />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/M%C3%BCnster%2C_LVM%2C_B%C3%BCrogeb%C3%A4ude_--_2013_--_5149-51.jpg" alt="" className='w-100' width='100px' height='500px' />
 
       <h1 className='text-center my-5'>WELCOME TO OUR WEBSITE</h1>
 
-      <p className='mt-3 text-center fs-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut magni pariatur eum laborum unde vel repellat aspernatur repudiandae magnam illum nesciunt neque tempore eius, consequuntur temporibus voluptate, nisi in vitae, quisquam voluptates explicabo nemo dolor! Dolores aspernatur veniam cupiditate explicabo velit minima, incidunt ipsum ratione. Veniam voluptatum dolorum minus voluptates, impedit molestias tempore autem quis officia nulla quae sed ea! Doloremque atque nesciunt a beatae iure, temporibus quisquam ducimus repellendus possimus quod tempora. Ullam repellat assumenda totam? Dolorem, eligendi dicta.</p>
+      <p className='mt-3 text-center fs-5'>Backlinks are an essential aspect of search engine optimization (SEO) and play a significant role in determining the credibility and authority of a website. They are links that originate from external websites and direct users to your site. Search engines view backlinks as endorsements or votes of confidence for your website, indicating its relevance and value to users. The key to successful backlink building is to focus on quality, relevance, and establishing genuine connections within your industry. By incorporating these strategies into your SEO efforts, you can improve your website's visibility, organic traffic, and overall online presence.</p>
 
       <div className="text-center">
         <Link to='/main/signup'><button className="btn btn-primary rounded-pill mt-2">Get Started</button></Link>
@@ -21,7 +21,7 @@ const Home = () => {
           <div className="card-body">
             <h3 className="card-title border border-danger border-3 rounded-pill d-inline px-3">About Us</h3>
             <p className="card-text my-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus maxime soluta numquam adipisci dolorum velit neque eos natus assumenda doloremque iure vero quas non quasi esse similique, consequatur animi!
+              At Company Profile, we are dedicated to providing backlinks to rank your website. With 3+ of experience in the industry, we have built a strong reputation for delivering in SEO, Backlinks.
             </p>
 
           </div>
@@ -31,7 +31,7 @@ const Home = () => {
           <div className="card-body">
             <h3 className="card-title border border-danger border-3 rounded-pill d-inline px-3">Why Choose Us</h3>
             <p className="card-text my-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laudantium magni cupiditate, eos doloremque repellat, consequatur illo itaque velit eum dolores nisi accusantium voluptatum dolorum nostrum ratione provident atque aspernatur?
+              Expertise: Our team comprises experienced professionals with in-depth knowledge and expertise in SEO. We stay updated with the latest industry trends and technologies to provide our customers with cutting-edge solutions.
             </p>
 
           </div>
@@ -119,9 +119,9 @@ const Home = () => {
             className="text-center p-4 bg-dark text-light"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.025)" }}
           >
-            © 2023 Copyright:
+            © 2023 Copyright:  
             <span className="text-reset fw-bold" >
-              Company Profile
+              <nbsp>Company Profile</nbsp>
             </span>
           </div>
           {/* Copyright */}

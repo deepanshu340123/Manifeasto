@@ -77,8 +77,12 @@ const SignIn = () => {
 
             <div className="row mt-5">
 
-                <div className="col-md-6">
+                {/* <div className="col-md-6">
                     <img src="https://theuniqueacademy.co.in/assets/images/test.png" alt="" style={{ width: '100%' }} />
+                </div> */}
+
+                <div className="col-md-6">
+                    <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=2000" alt="" style={{ width: '100%' }} />
                 </div>
 
                 <div className="col-md-6 my-auto">
