@@ -83,7 +83,7 @@ const Pro_list = () => {
     <div className="container">
       <header className="list-header">
         <h1 className="text-center mt-3 display-4 text-center fw-bold">Browse Company Profiles</h1>
-        <input className="form-control" onChange={(e) => filterByCompanyName('name', e.target.value)} />
+        <input className="form-control" onChange={(e) => filterByCompanyName('name', e.target.value)} placeholder='Search Company Profile' />
       </header>
 
       {categories.map((cat) => (
