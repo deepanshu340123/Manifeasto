@@ -58,7 +58,7 @@ const Navbar = () => {
 
             <>
                 {/* Navbar */}
-                <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor:'purple'}}>
+                <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:'purple'}}>
                     {/* Container wrapper */}
                     <div className="container">
                         {/* Navbar brand */}
@@ -82,7 +82,7 @@ const Navbar = () => {
                             {/* Left links */}
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <NavLink className="nav-link text-white" to="/main/homepage">
+                                    <NavLink className="nav-link" to="/main/homepage">
                                         Home
                                     </NavLink>
                                 </li>
@@ -92,15 +92,15 @@ const Navbar = () => {
                                     </NavLink>
                                 </li> */}
                                 <li className="nav-item">
-                                    <NavLink className="nav-link text-white" to="/main/pro_list">
+                                    <NavLink className="nav-link" to="/main/pro_list">
                                         Profile List
                                     </NavLink>
                                 </li>
-                                {/* <li className="nav-item">
-                                    <NavLink className="nav-link" to="/main/feedback">
-                                        Feedback
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/user/pro_entry">
+                                        Add New Profile
                                     </NavLink>
-                                </li> */}
+                                </li>
                                 {/* <li className="nav-item">
                                     <NavLink className="nav-link" to="/all_details">
                                         All Details
