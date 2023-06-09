@@ -58,7 +58,7 @@ const Navbar = () => {
 
             <>
                 {/* Navbar */}
-                <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor:'brown'}}>
+                <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor:'purple'}}>
                     {/* Container wrapper */}
                     <div className="container">
                         {/* Navbar brand */}
@@ -114,6 +114,11 @@ const Navbar = () => {
                                 <li className="nav-item">
                                     <NavLink className="nav-link text-white" to="/user/feedback">
                                         Feedback
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link text-white" to="/main/pricing">
+                                        Price
                                     </NavLink>
                                 </li>
                                 {/* <li className="nav-item">
