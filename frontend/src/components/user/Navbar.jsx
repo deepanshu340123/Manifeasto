@@ -102,6 +102,11 @@ const Navbar = () => {
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
+                                    <NavLink className="nav-link text-white" to="/main/pro_list">
+                                        Profile List
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
                                     <NavLink className="nav-link text-white" to="/user/managecompanies">
                                         All Details
                                     </NavLink>

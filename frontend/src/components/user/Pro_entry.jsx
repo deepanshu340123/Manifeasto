@@ -12,7 +12,7 @@ const Pro_entry = () => {
     formdata.cover = selFile.name;
     formdata.user = currentUser._id;
     console.log(formdata);
-    // resetForm()
+    resetForm();
 
     const res = await fetch('http://localhost:5000/company/add', {
       method: 'POST',
@@ -86,7 +86,15 @@ const Pro_entry = () => {
                     <label className="form-label text-dark" for="form12">
                       <b>Company Type</b>
                     </label>
-                    <input name="type" type="text" id="form12" className="form-control mb-3" onChange={handleChange} value={values.type} />
+                    
+                    <input list="datalist" name="type" type="text" id="form12" className="form-control mb-3" onChange={handleChange} value={values.type} />
+                    <datalist id="datalist">
+                      <option value="Product Based"> Product Based</option>
+                      <option value="Service Based"> Service Based</option>
+                      <option value="Sales"> Sales</option>
+                      <option value="Manufacturing"> Manufacturing</option>
+                      
+                    </datalist>
                   </div>
                 </div>
 
@@ -101,10 +109,16 @@ const Pro_entry = () => {
                     <label className="form-label text-dark" htmlFor="typePhone">
                       <b>Contact</b>
                     </label>
-                    <input name="contact" type="number" id="typePhone" className="form-control mb-3" onChange={handleChange} value={values.contact} />
+                    <input name="contact" type="tel" id="typePhone" className="form-control mb-3" onChange={handleChange} value={values.contact} />
                   </div>
                 </div>
 
+                <div className="">
+                <label className="form-label text-dark" htmlFor="backlink">
+                    <b>Offical Link</b>
+                  </label>
+                  <input text="text" className="form-control  mb-3" id="backlink" rows={4} onChange={handleChange} value={values.backlink} />
+                </div>
                 {/* <div className="">
                                         <label className="form-label text-dark" for="form12"><b>Name Of Departments</b></label>
                                         <input name='departments' type="text" id="form12" className="form-control mb-3" onChange={handleChange} value={values.departments} />
@@ -130,12 +144,7 @@ const Pro_entry = () => {
                   </label>
                   <textarea className="form-control  mb-3" id="working" rows={4}  onChange={handleChange} value={values.working} />
                 </div>
-                <div className="">
-                  <label className="form-label text-dark" htmlFor="backlink">
-                    <b>Offical Link</b>
-                  </label>
-                  <textarea className="form-control  mb-3" id="backlink" rows={4} onChange={handleChange} value={values.backlink} />
-                </div>
+                
 
                 <div className="mx-auto mb-5 col-md-6">
                   <button type="submit" className="btn btn-primary w-100" data-mdb-ripple-color="dark">
