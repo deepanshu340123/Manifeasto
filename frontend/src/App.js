@@ -18,6 +18,7 @@ import AdminProvider from './context/AdminProvider'
 import Main from './components/main';
 import User from './components/user';
 import CompanyDetails from './components/main/CompanyDetails';
+import Pricing from './components/main/Pricing';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
@@ -29,6 +30,7 @@ function App() {
           
           <Route path='/' element={<Navigate to='/main/homepage' />} />
           <Route element={<Main />} path='main'>
+            <Route element={<Pricing />} path='pricing' />
             <Route element={<Home />} path='homepage' />
             <Route element={<SignIn />} path='signin' />
             <Route element={<SignUp />} path='signup' />
