@@ -58,7 +58,7 @@ const Pro_entry = () => {
         <h1 className="text-center my-5">COMPANY PROFILE</h1>
         <div className="row">
           {/* <div className="col-md-6 my-auto"> */}
-          <img src="https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?cs=srgb&dl=pexels-pixabay-269077.jpg&fm=jpg" alt="" className="w-100 mb-3" />
+          <img src="https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?cs=srgb&dl=pexels-pixabay-269077.jpg&fm=jpg" alt="" className="w-100 mb-3" width='100px' height='500px'/>
           {/* </div> */}
         </div>
         <div className="row">
