@@ -101,6 +101,11 @@ const Navbar = () => {
                                         Add New Profile
                                     </NavLink>
                                 </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/main/pricing">
+                                        Price
+                                    </NavLink>
+                                </li>
                                 {/* <li className="nav-item">
                                     <NavLink className="nav-link" to="/all_details">
                                         All Details
